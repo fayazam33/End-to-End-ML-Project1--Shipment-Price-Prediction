@@ -1,0 +1,19 @@
+boto3
+mypy-boto3-s3
+fastapi
+uvicorn
+Jinja2
+matplotlib
+PyYAML
+scikit-learn
+seaborn
+pandas<2.0
+pymongo
+pymongo[srv]
+xgboost
+dill
+numpy<2.0
+evidently==0.2.8
+catboost
+python-dotenv
+-e .
