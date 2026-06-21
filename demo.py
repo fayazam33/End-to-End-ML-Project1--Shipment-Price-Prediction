@@ -1,9 +1,8 @@
 from shipment.logger import logging
 from shipment.exception import shippingException
+from shipment.utils.main_utils import MainUtils
 import sys
-logging.info("this is a test log message from demo.py")
-try:
-    a=1/0
-except Exception as e:
-    logging.info(e)
-    raise shippingException(e,sys) from e
+
+obj = MainUtils()
+data= obj.read_yaml_file("config/model.yaml")
+print(data)
