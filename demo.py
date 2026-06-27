@@ -9,7 +9,10 @@ import sys
 
 # from shipment.constants import DB_URL
 # print(DB_URL)
-from shipment.configuration.mongo_operation import MongoDBOperation
-obj = MongoDBOperation()
-df= obj.get_collection_as_dataframe(db_name="ShipmentDB", collection_name="ShipmentCollection")
-print(df.head())
+# from shipment.configuration.mongo_operation import MongoDBOperation
+# obj = MongoDBOperation()
+# df= obj.get_collection_as_dataframe(db_name="ShipmentDB", collection_name="ShipmentCollection")
+# print(df.head())
+from shipment.pipline.training_pipeline import pipeline 
+obj=TrainPipeline()
+obj.run_pipeline()
