@@ -11,3 +11,5 @@ MODEL_CONFIG_FILE = "config/model.yaml"
 SCHEMA_FILE_PATH = "config/schema.yaml"
 
 DB_URL=environ["MONGO_DB_URL"]
+
+TEST_SIZE=0.2
