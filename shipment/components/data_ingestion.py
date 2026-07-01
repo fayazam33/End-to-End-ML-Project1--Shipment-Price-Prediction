@@ -5,7 +5,7 @@ from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 from typing import Tuple
 from shipment.exception import shippingException
-from shipment.configuration.mongo_operations import MongoDBOperation
+from shipment.configuration.mongo_operation import MongoDBOperation
 from shipment.entity.config_entity import DataIngestionConfig
 from shipment.entity.artifact_entity import DataIngestionArtifacts
 from shipment.constants import TEST_SIZE

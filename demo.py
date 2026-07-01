@@ -13,6 +13,6 @@ import sys
 # obj = MongoDBOperation()
 # df= obj.get_collection_as_dataframe(db_name="ShipmentDB", collection_name="ShipmentCollection")
 # print(df.head())
-from shipment.pipline.training_pipeline import pipeline 
+from shipment.pipline.training_pipeline import TrainPipeline 
 obj=TrainPipeline()
 obj.run_pipeline()
