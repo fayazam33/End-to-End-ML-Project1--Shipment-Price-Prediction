@@ -26,3 +26,11 @@ DATA_INGESTION_TEST_FILE_NAME="test.csv"
 #data validation related constants
 DATA_VALIDATION_ARTIFACT_DIR="DataValidationArtifacts"
 DATA_DRIFT_FILE_NAME="DataDriftReport.yaml"
+
+#data transformation 
+DATA_TRANSFORMATION_ARTIFACTS_DIR="DataTransformationArtifacts"
+TRANSFORMED_TRAIN_DATA_DIR="TransformedTrain"
+TRANSFORMED_TEST_DATA_DIR="TransformedTest"
+TRANSFORMED_TRAIN_DATA_FILE_NAME="transformed_train_data.npz" #npz is the numpy compressed file format
+TRANSFORMED_TEST_DATA_FILE_NAME="transformed_test_data.npz"
+PREPROCESSOR_OBJECT_FILE_NAME="shipping_preprocessor.pkl"#ভবিষ্যতে নতুন data একইভাবে transform করার জন্য
