@@ -7,7 +7,7 @@ matplotlib
 PyYAML
 scikit-learn
 seaborn
-pandas<2.0
+pandas>=2.0
 pymongo
 pymongo[srv]
 xgboost
