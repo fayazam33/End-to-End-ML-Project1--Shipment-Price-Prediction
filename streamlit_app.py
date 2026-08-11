@@ -47,9 +47,38 @@ st.set_page_config(
 st.markdown(
     """
     <style>
+    /* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #0f172a 0%,
+        #172554 100%
+    );
+}
+
+/* Sidebar text */
+[data-testid="stSidebar"] * {
+    color: white;
+}
+
+/* Sidebar success message */
+[data-testid="stSidebar"] .stAlert {
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Sidebar info message */
+[data-testid="stSidebar"] .stAlert {
+    border-radius: 12px;
+}
+
+/* Divider */
+[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
 
     .main {
-        background-color: #f8fafc;
+        background-color:#cff6ff;
     }
 
     .block-container {
@@ -58,42 +87,76 @@ st.markdown(
         max-width: 1200px;
     }
 
-    .hero {
-        padding: 2rem;
-        border-radius: 20px;
-        background: linear-gradient(
-            135deg,
-            #0f172a,
-            #1e3a8a
-        );
-        color: white;
-        margin-bottom: 2rem;
-    }
+   .hero {
+    padding: 3rem;
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #1e3a8a 55%,
+        #2563eb 100%
+    );
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 40px rgba(30, 58, 138, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    right: -80px;
+    top: -100px;
+}
 
-    .hero h1 {
-        font-size: 2.7rem;
-        margin-bottom: 0.5rem;
-    }
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 0.7rem;
+}
 
-    .hero p {
-        font-size: 1.1rem;
-        opacity: 0.9;
-    }
+.hero p {
+    font-size: 1.15rem;
+    color: #dbeafe;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
 
     .prediction-box {
-        padding: 2rem;
-        border-radius: 20px;
-        background: white;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-        text-align: center;
-        margin-top: 2rem;
-    }
+    padding: 2.5rem;
+    border-radius: 24px;
+    background:  #92EEFF;
+    border: 1px solid #bfdbfe;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.12);
+    text-align: center;
+    margin-top: 2rem;
+}
 
     .prediction-value {
         font-size: 3rem;
         font-weight: 700;
-        color: #1d4ed8;
+        color:#249D8F;
     }
+    .prediction-description {
+    color: #64748b;
+    font-size: 0.95rem;
+}
 
     .section-title {
         font-size: 1.4rem;
@@ -102,14 +165,33 @@ st.markdown(
         margin-bottom: 1rem;
     }
 
-    .info-card {
-        padding: 1.2rem;
-        border-radius: 15px;
-        background: white;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        margin-bottom: 1rem;
-    }
+   .info-card {
+    padding: 1.5rem;
+    border-radius: 18px;
+    background: #E3F2FD;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+    margin-bottom: 1rem;
+}
 
+.stFormSubmitButton > button {
+    background: #f01f37;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 15px rgba(240, 31, 55, 0.25);
+}
+
+.stFormSubmitButton > button:hover {
+    background: #1dd890;
+    color: Black;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(240, 31, 55, 0.35);
+}
     </style>
     """,
     unsafe_allow_html=True
@@ -191,14 +273,18 @@ st.markdown(
     """
     <div class="hero">
 
-        <h1>🚚 Shipment Cost Predictor</h1>
-
+        
+    <h1>🚚 Shipment Cost Predictor</h1>
         <p>
         Predict the estimated shipment cost using
-        a machine learning model deployed on AWS S3.
+        a machine learning model 
         </p>
 
     </div>
+    
+    
+    
+    
     """,
     unsafe_allow_html=True
 )
@@ -212,15 +298,7 @@ with st.sidebar:
 
     st.header("⚙️ Model Information")
 
-    st.success("Model loaded from AWS S3")
-
-    st.write(
-        f"**Bucket:** `{S3_BUCKET_NAME}`"
-    )
-
-    st.write(
-        f"**Model:** `{S3_MODEL_KEY}`"
-    )
+    st.success("Model loaded from AWS and We Are Ready to Predict")
 
     st.divider()
 
@@ -423,7 +501,7 @@ with st.form("prediction_form"):
     st.divider()
 
     submitted = st.form_submit_button(
-        "🚀 Predict Shipment Cost",
+        "Predict the Shipment Cost",
         use_container_width=True
     )
 
@@ -479,16 +557,13 @@ if submitted:
             f"""
             <div class="prediction-box">
 
-                <h2>💰 Predicted Shipment Cost</h2>
+            <h2>💰 Predicted Shipment Cost</h2>
 
-                <div class="prediction-value">
+            <div class="prediction-value">
                     ${predicted_cost:,.2f}
-                </div>
+            </div>
 
-                <p>
-                    Estimated shipping cost based on
-                    the provided shipment information.
-                </p>
+           
 
             </div>
             """,
@@ -517,7 +592,14 @@ if submitted:
             hide_index=True
         )
 
-
+        st.markdown(
+    """
+    <div style="text-align:center; margin-top:40px; padding:20px; color:#64748b;">
+        Created by <strong>Fayaz Ali Muktadir</strong>
+    </div>
+    """,
+    unsafe_allow_html=True
+            )
     except Exception as e:
 
         st.error(
