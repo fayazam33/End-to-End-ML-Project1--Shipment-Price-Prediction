@@ -13,7 +13,6 @@ pymongo[srv]
 xgboost
 dill
 numpy<2.0
-evidently==0.2.8
 catboost
 python-dotenv
 streamlit
