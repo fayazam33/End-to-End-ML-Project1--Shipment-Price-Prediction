@@ -38,3 +38,7 @@ PREPROCESSOR_OBJECT_FILE_NAME="shipping_preprocessor.pkl"#ভবিষ্যত�
 MODEL_TRAINER_ARTIFACTS_DIR="ModelTrainerArtifacts"
 MODEL_FILE_NAME="shipping_price_model.pkl"
 MODEL_SAVE_FORMAT=".pkl"
+
+BUCKET_NAME="shipment-model-fayaz"
+S3_MODEL_NAME= "shipping_price_model.pkl"
+TARGET_COLUMN = "Cost"

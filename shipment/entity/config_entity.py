@@ -2,7 +2,7 @@ import os
 from shipment.utils.main_utils import MainUtils
 from shipment.constants import *
 from dataclasses import dataclass
-
+from shipment.configuration.s3_operations import S3Operation
 
 @dataclass
 class DataIngestionConfig:
@@ -92,3 +92,22 @@ class ModelTrainerConfig:
         self.TRAINED_MODEL_FILE_PATH: str = os.path.join(
             os.getcwd(), ARTIFACTS_DIR, MODEL_TRAINER_ARTIFACTS_DIR, MODEL_FILE_NAME
         )
+
+@dataclass
+class ModelEvaluationConfig:
+    def __init__(self):
+        self.S3_OPERATIONS = S3Operation()
+        self.UTILS = MainUtils()
+        self.BUCKET_NAME: str = BUCKET_NAME
+        self.BEST_MODEL_PATH: str = os.path.join(
+            os.getcwd(), ARTIFACTS_DIR, MODEL_TRAINER_ARTIFACTS_DIR, MODEL_FILE_NAME
+        )
+
+@dataclass
+class ModelPusherConfig:
+    def __init__(self):
+        self.BEST_MODEL_PATH: str = os.path.join(
+            os.getcwd(), ARTIFACTS_DIR, MODEL_TRAINER_ARTIFACTS_DIR, MODEL_FILE_NAME
+        )
+        self.BUCKET_NAME: str = BUCKET_NAME
+        self.S3_MODEL_KEY_PATH: str = os.path.join(S3_MODEL_NAME)
