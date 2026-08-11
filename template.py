@@ -49,3 +49,21 @@ for filepath in list_of_files:
             pass
     else:
         print(f"file is already present at: {filepath}")
+# boto3
+# mypy-boto3-s3
+# fastapi
+# uvicorn
+# Jinja2
+# matplotlib
+# PyYAML
+# scikit-learn
+# seaborn
+# pandas>=2.2
+# pymongo
+# pymongo[srv]
+# xgboost
+# dill
+# numpy<2.0
+# catboost
+# python-dotenv
+# streamlit

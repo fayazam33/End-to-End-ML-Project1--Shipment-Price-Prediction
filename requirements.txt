@@ -1,15 +1,9 @@
 boto3
-mypy-boto3-s3
-fastapi
-uvicorn
-Jinja2
 matplotlib
 PyYAML
 scikit-learn
 seaborn
 pandas>=2.2
-pymongo
-pymongo[srv]
 xgboost
 dill
 numpy<2.0
