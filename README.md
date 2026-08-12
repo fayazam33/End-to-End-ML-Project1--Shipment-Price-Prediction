@@ -93,13 +93,9 @@ an estimated shipment cost.
 ## 🔄 Project Workflow
 
 Dataset
-
 ↓
-
 Data Ingestion
-
 ↓
-
 Data Validation
 
 ↓
