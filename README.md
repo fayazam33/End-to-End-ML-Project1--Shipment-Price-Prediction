@@ -124,13 +124,13 @@ while Streamlit provides the interactive prediction interface.
 
 ## 🚀 Live Application
 
-👉 Add your Streamlit application URL here:
+👉 My Streamlit application URL here:
 
 https://shipment-cost-prediction-with-fayaz.streamlit.app/
 
 ## 👨‍💻 Author
 
-**Fayaz Ali Muktadir**
+## **Fayaz Ali Muktadir**
 
 This project was developed as an end-to-end machine learning
 implementation to practice data preprocessing, feature engineering,
