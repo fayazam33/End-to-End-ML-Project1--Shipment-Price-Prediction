@@ -91,41 +91,27 @@ an estimated shipment cost.
 - Dill
 
 ## 🔄 Project Workflow
-
+```
 Dataset
 ↓
 Data Ingestion
 ↓
 Data Validation
-
 ↓
-
 Data Transformation
-
 ↓
-
 Feature Engineering
-
 ↓
-
 Model Training
-
 ↓
-
 Model Evaluation
-
 ↓
-
 AWS S3 Model Storage
-
 ↓
-
 Streamlit Application
-
 ↓
-
 Shipment Cost Prediction
-
+```
 ## ☁️ Deployment
 
 The trained machine learning model is stored in **AWS S3** and
