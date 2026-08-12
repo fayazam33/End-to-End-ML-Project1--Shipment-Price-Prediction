@@ -122,6 +122,55 @@ loaded by the Streamlit application at runtime.
 MongoDB is used as part of the project's data/metadata pipeline,
 while Streamlit provides the interactive prediction interface.
 
+END-TO-END-ML-PROJECT1--SHIPMENT-PRICE-PREDICTION/
+│
+├── api/                         # API-related files
+│
+├── artifacts/                   # Generated ML artifacts
+│
+├── catboost_info/               # CatBoost training information
+│
+├── config/                      # Project configuration files
+│
+├── data/                        # Dataset and data-related files
+│
+├── DataTransformationArtifacts/ # Data transformation outputs
+│
+├── log/                         # Application and pipeline logs
+│
+├── notebooks/                   # Jupyter notebooks for analysis and experimentation
+│   ├── 1._EDA_Shipment-Pricing-Prediction.ipynb
+│   └── 2._Feature_Engineering_Model_Shipment-Pricing-Prediction.ipynb
+│
+├── shipment/                    # Main ML pipeline package
+│   ├── components/              # Data ingestion, transformation, model training, etc.
+│   ├── constants/               # Project constants
+│   ├── entity/                   # Configuration and artifact entities
+│   └── ...
+│
+├── test/                        # Test files
+│
+├── .dockerignore                # Docker ignore configuration
+├── .env                         # Environment variables (not committed to GitHub)
+├── .gitignore                   # Git ignore configuration
+│
+├── app.py                       # Application entry point
+├── demo.py                      # Demo/testing application
+├── Dockerfile                   # Docker configuration
+│
+├── LICENSE                      # Project license
+├── README.md                    # Project documentation
+├── requirements.txt             # Production dependencies
+├── requirements_dev.txt         # Development dependencies
+├── setup.py                     # Python package configuration
+│
+├── shipping_price_model.pkl     # Trained shipment price prediction model
+│
+├── streamlit_app.py             # Streamlit web application
+├── template.py                  # Project template/setup utility
+│
+└── shipment.egg-info/           # Python package metadata
+
 ## 🚀 Live Application
 
 👉 Add your Streamlit application URL here:
