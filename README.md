@@ -93,25 +93,41 @@ an estimated shipment cost.
 ## 🔄 Project Workflow
 
 Dataset
+
 ↓
+
 Data Ingestion
+
 ↓
+
 Data Validation
+
 ↓
+
 Data Transformation
+
 ↓
+
 Feature Engineering
+
 ↓
+
 Model Training
+
 ↓
+
 Model Evaluation
+
 ↓
-Model Serialization
-↓
+
 AWS S3 Model Storage
+
 ↓
+
 Streamlit Application
+
 ↓
+
 Shipment Cost Prediction
 
 ## ☁️ Deployment
