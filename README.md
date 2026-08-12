@@ -93,25 +93,41 @@ an estimated shipment cost.
 ## 🔄 Project Workflow
 
 Dataset
+
 ↓
+
 Data Ingestion
+
 ↓
+
 Data Validation
+
 ↓
+
 Data Transformation
+
 ↓
+
 Feature Engineering
+
 ↓
+
 Model Training
+
 ↓
+
 Model Evaluation
+
 ↓
-Model Serialization
-↓
+
 AWS S3 Model Storage
+
 ↓
+
 Streamlit Application
+
 ↓
+
 Shipment Cost Prediction
 
 ## ☁️ Deployment
@@ -173,13 +189,13 @@ END-TO-END-ML-PROJECT1--SHIPMENT-PRICE-PREDICTION/
 
 ## 🚀 Live Application
 
-👉 Add your Streamlit application URL here:
+👉 My Streamlit application URL here:
 
 https://shipment-cost-prediction-with-fayaz.streamlit.app/
 
 ## 👨‍💻 Author
 
-**Fayaz Ali Muktadir**
+## **Fayaz Ali Muktadir**
 
 This project was developed as an end-to-end machine learning
 implementation to practice data preprocessing, feature engineering,
