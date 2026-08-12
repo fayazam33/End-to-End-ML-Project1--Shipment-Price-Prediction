@@ -137,7 +137,7 @@ loaded by the Streamlit application at runtime.
 
 MongoDB is used as part of the project's data/metadata pipeline,
 while Streamlit provides the interactive prediction interface.
-
+```
 END-TO-END-ML-PROJECT1--SHIPMENT-PRICE-PREDICTION/
 │
 ├── api/                         # API-related files
@@ -186,7 +186,7 @@ END-TO-END-ML-PROJECT1--SHIPMENT-PRICE-PREDICTION/
 ├── template.py                  # Project template/setup utility
 │
 └── shipment.egg-info/           # Python package metadata
-
+```
 ## 🚀 Live Application
 
 👉 My Streamlit application URL here:
